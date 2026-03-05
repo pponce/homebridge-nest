@@ -121,7 +121,11 @@ class NestPlatform {
                         service.characteristics.forEach(characteristic => {
                             characteristic.on('get', callback => callback('error'));
                             characteristic.on('set', (value, callback) => callback('error'));
-                            characteristic.updateValue(characteristic.value);
+                            if (typeof characteristic.handleGetRequest === 'function') {
+                                characteristic.handleGetRequest().catch(() => { });
+                            } else {
+                                characteristic.updateValue(characteristic.value);
+                            }
                         });
                     });
                 });
