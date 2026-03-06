@@ -15,6 +15,7 @@ import "weave/trait/security.proto";
 import "weave/trait/power.proto";
 import "nest/trait/security.proto";
 import "nest/trait/detector.proto";
+import "nest/trait/product/protect.proto";
 import "nest/messages.proto";
 import "nestlabs/gateway/v1.proto";
 

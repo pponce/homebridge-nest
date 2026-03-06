@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+package nest.trait.product.protect;
+
+message LegacyProtectDeviceInfoTrait {
+    string capabilityIdx = 1;
+    bool autoAway = 2;
+    google.protobuf.FloatValue capabilityLevel = 3;
+    bool linePowerCapable = 4;
+    string spSoftwareVersion = 5;
+}
+
+message LegacyProtectDeviceSettingsTrait {
+    google.protobuf.Timestamp replaceByDate = 1;
+}
+
+message ProtectDeviceInfoTrait {
+    string deviceExternalColor = 1;
+}
+
+message SafetyStructureSettingsTrait {
+    string structureHushKey = 1;
+    bool phoneHushEnabled = 2;
+}
