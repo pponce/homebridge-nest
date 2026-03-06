@@ -5,9 +5,9 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ppponce/homebridge-nest.git"
+    "url": "git://github.com/pponce/homebridge-nest.git"
   },
-  "homepage": "https://github.com/ppponce/homebridge-nest#readme",
+  "homepage": "https://github.com/pponce/homebridge-nest#readme",
   "keywords": [
     "homebridge-plugin",
     "nest"
