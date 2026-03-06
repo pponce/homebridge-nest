@@ -165,7 +165,7 @@ Set `"options"` in `config.json` to an array of strings chosen from the followin
 * `"HomeAway.AsOccupancySensorAndSwitch"` - create Home/Away indicator as an *OccupancySensor* and a *Switch*
 * `"Protect.Disable"` - exclude Nest Protects from HomeKit
 * `"Protect.MotionSensor.Disable"` - disable *MotionDetector* accessory for Nest Protects
-* `"Protect.Protobuf.Enable"` - opt in to mounting Nest Protect devices discovered over protobuf (experimental)
+* `"Protect.Protobuf.Enable"` - opt in to full protobuf mode for Nest Protects (experimental): mount Protects from protobuf and stop relying on REST `topaz` updates
 * `"Lock.Disable"` - exclude Nest x Yale Locks from HomeKit
 * `"Nest.FieldTest.Enable"` - set this option if you're using a Nest Field Test account (experimental)
 
