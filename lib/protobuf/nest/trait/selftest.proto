@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package nest.trait.selftest;
+
+message SelfTestRunnerTrait {
+  enum TestId {
+    TEST_ID_UNSPECIFIED = 0;
+    TEST_ID_1 = 1;
+    TEST_ID_2 = 2;
+    TEST_ID_3 = 3;
+  }
+}
